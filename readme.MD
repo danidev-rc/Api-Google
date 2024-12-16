@@ -1,0 +1,13 @@
+# Variables de Entorno para usar.
+
+```
+PORT=
+NODE_ENV=
+CORS_ORIGIN=
+
+JWT_SECRET=
+MONGO_URI=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
