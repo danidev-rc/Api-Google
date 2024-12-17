@@ -1,0 +1,9 @@
+###
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+Cookie: connect.sid=s%3AFltrdEc1txIWnh7dz19Osz7RmIE-BJ8O.ibNF4BxSIZXR8DGzBvrcUFtmISv3tgu%2FGE6fRFJGncc
+
+{
+  "title": "Nueva Tarea",
+  "description": "Descripción de la nueva tarea"
+}

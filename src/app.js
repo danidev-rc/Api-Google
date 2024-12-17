@@ -2,8 +2,9 @@ import morgan from 'morgan'
 import express from 'express'
 import cookieParser from 'cookie-parser'
 import session from 'express-session'
-import authRoutes from './routes/auth.routes.js'
 import passport from './config/passport.config.js'
+import authRoutes from './routes/auth.routes.js'
+import taskRoutes from './routes/task.routes.js'
 import { Envconfig } from './config/env.config.js'
 
 const { jwtSecret } = Envconfig()
@@ -36,5 +37,6 @@ app.use(passport.session())
 
 // Rutas
 app.use('/auth', authRoutes)
+app.use('/api', taskRoutes)
 
 export default app
